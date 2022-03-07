@@ -1,0 +1,173 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  background-color: #8D9797;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #4E545C;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #8D9797;
+  color: black;
+}
+
+.topnav .icon {
+  padding: 6px;
+  margin-top: 8px;
+  border: none;
+}
+
+.topnav a.active {
+  background-color: cyan;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.title{
+    font-family: 'Shizuru', cursive;
+    text-align: center;
+    border: 20px solid transparent;
+    border-image: url(space.jpg) 20 stretch;
+    font-size: 200px;
+    background-color: white;
+    color: cyan;
+    word-spacing: -140px;
+    margin-top: 0px;
+}
+.grid-container {
+    margin-top: 100px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: none;
+    padding: 10px;
+  }
+/*
+  .grid-item {
+    border: 20px solid transparent;
+    border-image: url(space.jpg) 20 stretch;
+    background-color: #8D9797;
+    text-align: center;
+  }
+*/
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    color: cyan;
+    background: linear-gradient(
+      to bottom,
+      #8D9797,
+      #8D9797 50%,
+      #4E545C 50%,
+      #4E545C
+    );
+    background-size: 100% 20px;
+  }
+  
+  .price {
+    color: white;
+    font-size: 22px;
+    background: black;
+    border: cyan solid 2px;
+    padding: 5px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: cyan;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+#hoodie{
+  border: white solid 2px;
+  background: black;
+  padding: 5px;
+}
+.text{
+  border: white solid 2px;
+  background: black;
+  padding: 5px;
+}
+a{
+text-decoration: none;
+color: cyan;
+}
+.footer{
+  display: grid;
+  margin-top: 100px;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: none;
+  padding: 10px;
+}
